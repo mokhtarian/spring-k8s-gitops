@@ -1,0 +1,6 @@
+replicaCount: 1
+
+image:
+  repository: spring-k8s-demo
+  tag: "1.1.0"
+  pullPolicy: Never

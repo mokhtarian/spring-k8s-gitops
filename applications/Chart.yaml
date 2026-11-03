@@ -1,0 +1,11 @@
+apiVersion: v2
+
+name: spring-k8s-demo
+
+description: Spring Boot Kubernetes Demo
+
+type: application
+
+version: 0.1.0
+
+appVersion: "1.1.0"

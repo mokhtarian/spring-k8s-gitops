@@ -1,0 +1,26 @@
+replicaCount: 2
+
+image:
+  repository: spring-k8s-demo
+  tag: "1.1.0"
+  pullPolicy: Never
+
+service:
+  type: ClusterIP
+  port: 8080
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+probes:
+  readiness:
+    path: /actuator/health/readiness
+
+  liveness:
+    path: /actuator/health/liveness
